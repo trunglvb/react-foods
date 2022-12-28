@@ -1,0 +1,29 @@
+.contact__circle {
+    clip-path: circle(98.9% at 100% 100%);
+    border-bottom-right-radius: 16px !important;
+
+}
+.contact__input {
+    padding: 15px 0;
+    border-bottom: 3px solid rgba(191, 197, 196, 0.839);
+    outline: none;
+
+    &:focus {
+        border-bottom: 3px solid rgb(186, 102, 186);
+    }
+}
+
+@media only screen and (max-width: 648px) {
+    
+    .contact__circle, .contact__icon {
+        display: none;
+    }
+}
+@media (max-width: 300px) {
+    .contact__icon {
+        display: none !important;
+    }
+    .contact__left {
+        display: none;
+    }
+}

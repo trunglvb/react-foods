@@ -1,8 +1,11 @@
 /* google fonts */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web&display=swap");
-
+@import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick-theme.css";
 /* reset default style */
 
 * {
@@ -15,7 +18,8 @@
 
 body {
   background: #fcfcfc;
-  font-family: "Istok Web", sans-serif;
+   /* background: rgba(0,0,0,0.3) */
+;  font-family: "Istok Web", sans-serif;
 }
 
 h1,
@@ -40,5 +44,17 @@ h2 {
 }
 
 section {
-  padding: 60px 0px;
+  padding: 30px 0px;
 }
+
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 40px 0;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}
+

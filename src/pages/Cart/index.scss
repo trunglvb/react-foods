@@ -1,0 +1,30 @@
+th, td {
+    text-align: center !important;
+}
+
+
+@media (max-width: 420px) {
+    th, td {
+        font-size: 0.65rem;
+    }
+    .subtotal{
+        & h6 {
+            font-size: 0.9rem;
+        }
+        & p {
+            font-size: 0.8rem;
+        }   
+
+        &__button {
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            & button {
+                margin: 1px 0 !important;
+            }
+        }
+    }
+}

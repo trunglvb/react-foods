@@ -1,0 +1,148 @@
+.header {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+.header__shink {
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 5px 15px -5px #fde4e4;
+    background: #fff;
+    z-index: 999;
+}
+.logo {
+    text-align: center;
+
+    & img {
+        width: calc(100% - 60%);
+        object-fit: contain;
+    }
+
+}
+
+.menu a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #212245;
+    transition:  0.3s;
+
+    &:hover {
+        color: #df2020;
+    }
+}
+
+.active__menu {
+    color: #df2020 !important;
+}
+
+
+.cart__icon i, .user i, .mobile__menu i{
+    font-size: 1.3rem;
+    color: #212245;
+}
+.cart__icon {
+    position: relative;
+    cursor: pointer;
+}
+.cart__badge{
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background: #df2020;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobile__menu {
+    font-weight: 600;
+    display: none;
+}
+
+.header__shink {
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 5px 15px -5px #fde4e4 ;
+}
+.logout_mobile, .user__mobile{
+    display: none !important;
+}
+.nav__right {
+    gap: 30px;
+}
+@media only screen and (max-width: 992px) {
+    .nav__right {
+        gap: 15px;
+    }
+    .logout_pc, .user-avt{
+        display: none !important;
+        
+    }
+    
+    .cart__badge{
+        top: 20px;
+    }
+   
+    .logout_mobile, .user__mobile{
+        display: block !important;
+    }
+    .logo img {
+        width: calc(100% - 70%);
+    }
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.534);
+        z-index: 99;
+        display: none;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        line-height: 20px;
+
+        & a {
+            font-size: 0.9rem;
+
+        }
+    }
+    .mobile__menu {
+        display: block;
+    }
+    .cart__icon i, .user i, .mobile__menu i{
+        font-size: 24px;
+    } 
+
+    .show__menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+    }
+
+}

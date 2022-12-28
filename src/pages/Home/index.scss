@@ -1,0 +1,254 @@
+// home
+
+.hero__title{
+    font-size: 2.5rem;
+    line-height: 55px;
+
+    & span {
+        color: #df2020;
+    }
+}
+.hero__content {
+    padding-top: 70px;
+
+    & p {
+        font-size: 1rem;
+        line-height: 30px;
+        color: #777;
+    }
+
+}
+.hero__btns{
+    & button {
+        border: none;
+        outline: none;
+        padding: 7px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+}
+.hero__service{
+    gap: 30px;
+    
+}
+.order__btn{
+    background: #df2020;
+    color: #fff;
+    transition: 0.3s;
+
+    &:hover {
+        background: #212245;
+    }
+}
+.all__foods-btn {
+    background: transparent;
+    border: 1px solid #df2020 !important;
+
+    & a {
+        color: #df2020;
+
+    }
+}
+
+.hero__service {
+    & p {
+        color: #212245;
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+}
+
+.shipping__icon i{
+    padding: 5px;
+    background: #df2020;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 500 !important;
+}
+
+.feature {
+    &__subtitle {
+        color: #df2020;
+    }
+
+    &__title span{
+        color: #df2020;
+    }
+    &__text {
+        color: #777;
+    }
+
+    &__item p {
+        color: #777;
+    }
+
+}
+
+.food__category {
+    background: #df2020;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-radius: 8px;
+
+    & button {
+        border: none;
+        outline: none;
+        padding: 7px 20px;
+        background: transparent;
+        color: #fff;
+        color: #fff;
+
+        & img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.foodBtnActive {
+    background: #fff !important;
+    border-radius: 5px;
+    color: #df2020 !important;
+}
+
+.why__tasty-treat{
+    & > p {
+        color: #777;
+        line-height: 28px;
+    }
+}
+.tasty__treat-title span {
+    color: #df2020;
+}
+
+.choose__us-title{
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    & i {
+        font-weight: 500 !important ;
+        color: #df2020;
+    }
+}
+
+.choose_us-desc {
+    color: #777;
+}
+
+.testimonial{
+
+    &__subtitle {
+        color: #df2020;
+    }
+
+    &__title span {
+        color: #df2020;
+
+    }
+
+    &__desc {
+        color: #777;
+        line-height: 30px;
+    }
+}
+
+@media only screen  and (max-width: 768px ) {
+    .hero__content {
+        
+        & h5 {
+            font-size: 1rem;
+
+        }
+
+        & p {
+            font-size: 0.8rem;
+            line-height: 25px;
+        }
+    }
+    .hero__title {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+    .hero__btns button {
+        padding: 5px 15px;
+        font-size: 0.7rem;
+    }
+
+    .hero__service p {
+        font-size: 0.7rem !important;
+        min-width: max-content;
+    }
+    .feature {
+        &__item{
+            & h5 {
+                font-size: 0.9rem;
+            }
+    
+            & p {
+                font-size: 0.8rem;
+                margin-bottom: 0;
+            }
+        }
+
+        &__subtitle {
+            font-size: 1rem;
+        }
+
+        &__text {
+            font-size: 0.8rem;
+            margin-bottom: 0;
+        }
+    }
+
+    .food__category {
+        padding: 15px;
+        
+        & button {
+            padding: 5px 15px;
+            font-size: 0.7rem;
+        }
+    }
+    .choose__us-title {
+        font-size: 0.8rem;
+    }
+    .choose_us-desc{
+        font-size: 0.7rem;
+    }
+    .tasty__treat-desc {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
+    .testimonial{
+        &__subtile {
+            font-size: 1rem;
+        }
+
+        &__desc {
+            font-size: 0.8rem;
+        }
+    }
+
+}
+@media only screen  and (max-width: 576px ) {
+    .hero__content {
+        text-align: center;
+    }
+
+    .hero__btns, .hero__service {
+        justify-content: center;
+    }
+    .why-choose-us{
+        padding-top: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero__service {
+       flex-direction: column;
+       margin-top: 0 !important;
+       gap: 0 !important;
+    }
+}
